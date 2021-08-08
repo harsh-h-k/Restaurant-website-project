@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&display=swap');
+
+:root{
+    --darkb : #22272c ;
+    --dblue2 : #2a4158 ;
+    --lightblue : #597387 ;
+    --lightblue2 : #8c9ea3 ;
+    --golden : #958a56 ;
+    --bgcolor : #f3f7fb ;
+    --green : #1f5d2f ;
+    --heading: 'Great Vibes', cursive; 
+    --para1: 'Montserrat', sans-serif;
+    --para2 : 'Poppins', sans-serif; 
+}
+
+#error404{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    width: 80%;
+    height: auto;
+    margin: 0px auto;
+}
+
+#error404 img{
+    
+    align-self: center;
+    width: 100%;
+    height: auto;
+}
+
+.menu-btn{
+    display: block;
+    margin: 2rem auto;
+}
+
+.menu-btn:hover{
+    background-color: var(--lightblue2);
+    color: white;
+}
+

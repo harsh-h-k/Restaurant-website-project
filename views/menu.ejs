@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Harsh's Restro : Menu</title>
+    <%- include('partials/HeaderLinks') %>
+    <link rel="stylesheet" href="css/menustyle.css">
+
+<body>
+    <%- include('partials/Header') %>
+
+    <section id="complete-menu">
+        <div id="c-menu-1" class="c-menu">
+            <h2>Welcome</h2>
+            <h3>to</h3>
+            <h1>Harsh's Restro</h1>
+            <img class="divider" src="images/divider.png" alt="">
+            <h4 class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim rerum impedit consequuntur
+                ullam placeat voluptatem dolore doloremque officia, molestiae pariatur, ad molestias saepe perferendis
+                tempora soluta fugit obcaecati excepturi quasi!</h4>
+            <img class="divider" src="images/divider.png" alt="">
+            <h2>Check out our menu and <span id="order">Order now!!</span> </h2>
+        </div>
+
+        <!-- {{!-- INDIAN CHINES FAST FOOD MENU --}}
+        {{!-- MENU 1 --}} -->
+
+        <div id="c-menu-2">
+            <div id="c-menu-box-1" class="c-menu-box">
+                <div class="c-menu-box-heading">
+                    <h2>INDIAN</h2>
+                    <h1> Kyu ki Dil hai Hindustani</h1>
+                    <i class="fas fa-plus" onclick="OpenBox()"></i>
+                </div>
+            </div>
+
+            <!-- {{!-- MENU CONTENT --}} -->
+
+
+            <div class="c-menu-box-content">
+                <form action="http://localhost:3000/submit" method="POST">
+                    <!-- {{!-- ITEM1 --}} -->
+                    <div class="dish">
+                        <p class="dish-text">
+                            <i class="fas fa-utensils"></i>
+                            
+                        </p>
+                        <input type="hidden" value="" class="dish-name" name="">
+
+                        <p class="dish-price">
+                            <i class="fas fa-rupee-sign"></i>
+                            
+                        </p>
+
+                        <input type="hidden" value="" class="dish-Price" name="">
+
+                        <input type="number" name="" class="dish-qty" value="0" min="0" max="10">
+
+                    </div>
+
+                     <!-- {{!-- ITEM 2--}} -->
+                    <div class="dish">
+                        <p class="dish-text">
+                            <i class="fas fa-utensils"></i>
+                            
+                        </p>
+                        <input type="hidden" value="" class="dish-name" name="">
+
+                        <p class="dish-price">
+                            <i class="fas fa-rupee-sign"></i>
+                            
+                        </p>
+
+                        <input type="hidden" value="" class="dish-Price" name="">
+
+                        <input type="number" name="" class="dish-qty" value="0" min="0" max="10">
+
+                    </div>
+
+                     <!-- {{!-- ITEM3 --}} -->
+                    <div class="dish">
+                        <p class="dish-text">
+                            <i class="fas fa-utensils"></i>
+                            
+                        </p>
+                        <input type="hidden" value="" class="dish-name" name="">
+
+                        <p class="dish-price">
+                            <i class="fas fa-rupee-sign"></i>
+                            
+                        </p>
+
+                        <input type="hidden" value="" class="dish-Price" name="">
+
+                        <input type="number" name="" class="dish-qty" value="0" min="0" max="10">
+
+                    </div>
+
+                     <!-- {{!-- ITEM 4--}} -->
+                    <div class="dish">
+                        <p class="dish-text">
+                            <i class="fas fa-utensils"></i>
+                            
+                        </p>
+                        <input type="hidden" value="" class="dish-name" name="">
+
+                        <p class="dish-price">
+                            <i class="fas fa-rupee-sign"></i>
+                            
+                        </p>
+
+                        <input type="hidden" value="" class="dish-Price" name="">
+
+                        <input type="number" name="" class="dish-qty" value="0" min="0" max="10">
+
+                    </div>
+
+                    <!-- {{!-- ITEM 5--}} -->
+                    <div class="dish">
+                        <p class="dish-text">
+                            <i class="fas fa-utensils"></i>
+                            
+                        </p>
+                        <input type="hidden" value="" class="dish-name" name="">
+
+                        <p class="dish-price">
+                            <i class="fas fa-rupee-sign"></i>
+                            
+                        </p>
+
+                        <input type="hidden" value="" class="dish-Price" name="">
+
+                        <input type="number" name="" class="dish-qty" value="0" min="0" max="10">
+
+                    </div>
+
+                    <!-- {{!-- ITEM 6--}} -->
+                    <div class="dish">
+                        <p class="dish-text">
+                            <i class="fas fa-utensils"></i>
+                            
+                        </p>
+                        <input type="hidden" value="" class="dish-name" name="">
+
+                        <p class="dish-price">
+                            <i class="fas fa-rupee-sign"></i>
+                            
+                        </p>
+
+                        <input type="hidden" value="" class="dish-Price" name="">
+
+                        <input type="number" name="" class="dish-qty" value="0" min="0" max="10">
+
+                    </div>
+
+                    <!-- {{!-- ITEM 7--}} -->
+                    <div class="dish">
+                        <p class="dish-text">
+                            <i class="fas fa-utensils"></i>
+                            
+                        </p>
+                        <input type="hidden" value="" class="dish-name" name="">
+
+                        <p class="dish-price">
+                            <i class="fas fa-rupee-sign"></i>
+                            
+                        </p>
+
+                        <input type="hidden" value="" class="dish-Price" name="">
+
+                        <input type="number" name="" class="dish-qty" value="0" min="0" max="10">
+
+                    </div>
+
+                    <!-- {{!-- ITEM 8--}} -->
+                    <div class="dish">
+                        <p class="dish-text">
+                            <i class="fas fa-utensils"></i>
+                            
+                        </p>
+                        <input type="hidden" value="" class="dish-name" name="">
+
+                        <p class="dish-price">
+                            <i class="fas fa-rupee-sign"></i>
+                            
+                        </p>
+
+                        <input type="hidden" value="" class="dish-Price" name="">
+
+                        <input type="number" name="" class="dish-qty" value="0" min="0" max="10">
+
+                    </div>
+
+                    <!-- {{!-- ITEM 9--}} -->
+                    <div class="dish">
+                        <p class="dish-text">
+                            <i class="fas fa-utensils"></i>
+                            
+                        </p>
+                        <input type="hidden" value="" class="dish-name" name="">
+
+                        <p class="dish-price">
+                            <i class="fas fa-rupee-sign"></i>
+                            
+                        </p>
+
+                        <input type="hidden" value="" class="dish-Price" name="">
+
+                        <input type="number" name="" class="dish-qty" value="0" min="0" max="10">
+
+                    </div>
+
+                      <!-- {{!-- ITEM 10--}} -->
+                    <div class="dish">
+                        <p class="dish-text">
+                            <i class="fas fa-utensils"></i>
+                            
+                        </p>
+                        <input type="hidden" value="" class="dish-name" name="">
+
+                        <p class="dish-price">
+                            <i class="fas fa-rupee-sign"></i>
+                            
+                        </p>
+
+                        <input type="hidden" value="" class="dish-Price" name="">
+
+                        <input type="number" name="" class="dish-qty" value="0" min="0" max="10">
+
+                    </div>
+
+                      <!-- {{!-- ITEM 11--}} -->
+                    <div class="dish">
+                        <p class="dish-text">
+                            <i class="fas fa-utensils"></i>
+                            
+                        </p>
+                        <input type="hidden" value="" class="dish-name" name="">
+
+                        <p class="dish-price">
+                            <i class="fas fa-rupee-sign"></i>
+                            
+                        </p>
+
+                        <input type="hidden" value="" class="dish-Price" name="">
+
+                        <input type="number" name="" class="dish-qty" value="0" min="0" max="10">
+
+                    </div>
+
+                      <!-- {{!-- ITEM 12--}} -->
+                    <div class="dish">
+                        <p class="dish-text">
+                            <i class="fas fa-utensils"></i>
+                            
+                        </p>
+                        <input type="hidden" value="" class="dish-name" name="">
+
+                        <p class="dish-price">
+                            <i class="fas fa-rupee-sign"></i>
+                            
+                        </p>
+
+                        <input type="hidden" value="" class="dish-Price" name="">
+
+                        <input type="number" name="" class="dish-qty" value="0" min="0" max="10">
+
+                    </div>
+
+                      <!-- {{!-- ITEM 13--}} -->
+                    <div class="dish">
+                        <p class="dish-text">
+                            <i class="fas fa-utensils"></i>
+                            
+                        </p>
+                        <input type="hidden" value="" class="dish-name" name="">
+
+                        <p class="dish-price">
+                            <i class="fas fa-rupee-sign"></i>
+                            
+                        </p>
+
+                        <input type="hidden" value="" class="dish-Price" name="">
+
+                        <input type="number" name="" class="dish-qty" value="0" min="0" max="10">
+
+                    </div>
+
+                      <!-- {{!-- ITEM 14--}} -->
+                    <div class="dish">
+                        <p class="dish-text">
+                            <i class="fas fa-utensils"></i>
+                            
+                        </p>
+                        <input type="hidden" value="" class="dish-name" name="">
+
+                        <p class="dish-price">
+                            <i class="fas fa-rupee-sign"></i>
+                            
+                        </p>
+
+                        <input type="hidden" value="" class="dish-Price" name="">
+
+                        <input type="number" name="" class="dish-qty" value="0" min="0" max="10">
+
+                    </div>
+
+                      <!-- {{!-- ITEM 15--}} -->
+                    <div class="dish">
+                        <p class="dish-text">
+                            <i class="fas fa-utensils"></i>
+                            
+                        </p>
+                        <input type="hidden" value="" class="dish-name" name="">
+
+                        <p class="dish-price">
+                            <i class="fas fa-rupee-sign"></i>
+                            
+                        </p>
+
+                        <input type="hidden" value="" class="dish-Price" name="">
+
+                        <input type="number" name="" class="dish-qty" value="0" min="0" max="10">
+
+                    </div>
+
+                   
+                    
+
+ <button type="submit" id="Proceed-Order"> Proceed To Place Your Order</button>
+                </form>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <!-- {{!-- FOOTER --}} -->
+    <%- include('partials/Footer') %>
+
+   
+</body>
+ {{!-- JAVA SCRIPT --}}
+    <script>
+        const toggleButton = document.getElementsByClassName('navbar-navtoggle')[0];
+        const navbarLinks = document.getElementsByClassName('navbar-menu-item');
+
+        toggleButton.addEventListener("click", () => {
+            for (let i = 0; i < navbarLinks.length; i++) {
+                navbarLinks[i].classList.toggle('active')
+            }
+        })
+        
+        var dishName = document.querySelectorAll('.dish-name')
+        var dishPrice = document.querySelectorAll('.dish-Price')
+        var dishQty = document.querySelectorAll('.dish-qty')
+        var pTagDishprice = document.querySelectorAll('.dish-price')
+        var pTagDishName = document.querySelectorAll('.dish-text')
+
+        const Prices = [ 50,80,80,150,180,180,150,180,10,15,80,120,100,25,40]
+        const Dishes = ["Cold Drinks","Chowmein","Aloo Cutlet","Aloo Tikki Burger","Panner Masala","Shahi Paneer","Chilli Panner","Mushroom Masala","Tawa Bread","Tandori Bread","Jeera Rice","Dal Fry","Salad","Papad","Gulab Jamun"]
+
+        for (i = 0; i < 15; i++) {
+            dishName[i].name = `dishName${i}`
+            dishName[i].value = Dishes[i]
+            dishPrice[i].name = `dishPrice${i}`
+            dishPrice[i].value = Prices[i]
+            dishQty[i].name = `dishQty${i}`
+            pTagDishprice[i].innerHTML = Prices[i]
+            pTagDishName[i].innerHTML = Dishes[i]
+        }
+
+    </script>
+</html>

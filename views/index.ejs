@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Harsh's Restro</title>
+    <%- include('partials/HeaderLinks') %>
+</head>
+
+<body>
+ <!-- NAV BAR SECTION  -->
+ 
+ <%- include('partials/Header') %> 
+    <!--   FRONT SECTION    -->
+
+    <section id="front">
+        <div id="front-text-box" class="white center">
+            <h2 class="para1">Feeling Hungry?</h2>
+            <h4 class="para2">Delicious Food is Just a click away!
+                <br>
+                Check Out Our <a href="/menu">Menu</a>
+                br and Order Now
+            </h4>
+            <button class="menu-btn front-btn para2">
+                Order Now!
+            </button>
+        </div>
+        </div>
+    </section>
+
+    <!-- MENU SECTION : 01  -->
+
+    <section id="menu">
+        <div id="menutext" class="menubox">
+            <img class="divider" src="images/divider.png" alt="">
+            <h2>
+                Check out our
+            </h2>
+            <h1>Menu</h1>
+            <img class="divider" src="images/divider.png" alt="">
+            <h2 class="dark">INDIAN</h2>
+
+            <h4>
+                Spicy, rich, flavourful and diverse are terms that are frequently used to describe Indian food. All these words are apt in describing Indian cuisine, for it is diverse in variety and taste, and is made up from a wide array of regional cuisines throughout various parts of India.
+                We offer most of them.
+
+            </h4>
+
+            <button style="margin: 2rem 0em;" class="menu-btn-dark">ORDER NOW</button>
+            <img class="divider" src="images/divider.png" alt="">
+        </div>
+        <div id="menuimg" class="menubox">
+            <img src="images/grid1.jpg" alt="">
+            <img src="images/grid2.jpg" alt="">
+            <img src="images/grid4.jpg" alt="">
+            <img src="images/grid5.jpg" alt="">
+        </div>
+
+    </section>
+
+   
+    <!-- ABOUT US SECTION  -->
+
+    <section id="aboutus">
+          <div id="aboutimg" class="aboutbox">
+            <img id="over1" src="images/about1.jpg" alt="">
+
+        </div>
+
+
+        <div id="menutext" class="aboutbox">
+            <img class="divider" src="images/divider.png" alt="">
+            <h2>
+                Get to Know
+            </h2>
+            <h1>About Us</h1>
+            <img class="divider" src="images/divider.png" alt="">
+            <h4>
+                Harsh's Restro was started by Harsh Kesharwani in the year 1990. Since then , It has amazed people of Allahabad by it's finger-licking dishes.
+                 
+
+            </h4>
+            <button style="margin: 2rem 0em;" class="menu-btn-dark">READ MORE</button>
+            <img class="divider" src="images/divider.png" alt="">
+        </div>
+      
+    </section>
+
+    <!-- REVIEWS SECTION  -->
+
+    <section id="reviews">
+        <h1>What People say About Us</h1>
+        <div id="review-container">
+            <div id="review-1" class="reviewbox">
+                <div class="reviewbox-img">
+                    <img src="images/review1.jpg" alt="">
+                </div>
+                <div class="reviewbox-text">
+                    <i class="fas fa-quote-left"></i>
+                    <h4>First class restaurant.Let it staff service, hygiene or anything else. Harsh's Restro is best in Allahabad</h4><i class="fas fa-quote-right"></i>
+                </div>
+            </div>
+
+            <div id="review-2" class="reviewbox">
+                <div class="reviewbox-img">
+                    <img src="images/review2.jpg" alt="">
+                </div>
+                <div class="reviewbox-text">
+                    <i class="fas fa-quote-left"></i>
+                    <h4>If you are in Allahabad , It is the best place to eat. Home Delivery is also on time with proper packaging and polite staff. </h4><i class="fas fa-quote-right"></i>
+                </div>
+            </div>
+            <div id="review-3" class="reviewbox">
+                <div class="reviewbox-img">
+                    <img src="images/review3.jpg" alt="">
+                </div>
+                <div class="reviewbox-text">
+                    <i class="fas fa-quote-left"></i>
+                    <h4>I love this restaurant. Nice staff and good service. Food is always so Delicious and fresh.</h4><i class="fas fa-quote-right"></i>
+                </div>
+            </div>
+            <div id="review-4" class="reviewbox">
+                <div class="reviewbox-img">
+                    <img src="images/review4.jpg" alt="">
+                </div>
+                <div class="reviewbox-text">
+                    <i class="fas fa-quote-left"></i>
+                    <h4>What a lovely restaurant, good food and service and atmosphere, definitely hope to go back.</h4><i class="fas fa-quote-right"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-- FOOTER SECTION  -->
+
+
+<%- include('partials/Footer') %>
+
+    <!-- JAVASCRIPT -->
+    
+    <script>
+        const toggleButton = document.getElementsByClassName('navbar-navtoggle')[0];
+const navbarLinks = document.getElementsByClassName('navbar-menu-item');
+
+toggleButton.addEventListener("click", () => {
+    for (let i = 0; i < navbarLinks.length; i++) {
+        navbarLinks[i].classList.toggle('active')
+    }
+})
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Harsh's Restro : About Us</title>
+    <%- include('partials/HeaderLinks') %>
+
+<body>
+    <%- include('partials/Header') %>
+    
+    <%- include('partials/Footer') %>
+{{!-- JAVA SCRIPT  --}}
+    <script>
+        const toggleButton = document.getElementsByClassName('navbar-navtoggle')[0];
+        const navbarLinks = document.getElementsByClassName('navbar-menu-item');
+
+        toggleButton.addEventListener("click", () => {
+            for (let i = 0; i < navbarLinks.length; i++) {
+                navbarLinks[i].classList.toggle('active')
+            }
+        })
+    </script>
+</body>
+
+</html>

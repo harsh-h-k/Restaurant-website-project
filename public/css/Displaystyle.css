@@ -1,0 +1,91 @@
+/* VARIABLES */
+:root{
+    --darkb : #22272c ;
+    --dblue2 : #2a4158 ;
+    --lightblue : #597387 ;
+    --lightblue2 : #8c9ea3 ;
+    --golden : #958a56 ;
+    --bgcolor : #f3f7fb ;
+    --green : #1f5d2f ;
+    --heading: 'Great Vibes', cursive; 
+    --para1: 'Montserrat', sans-serif;
+    --para2 : 'Poppins', sans-serif; 
+}
+
+ /* CSS */
+
+#CorderInfo{
+    padding-top: 100px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.info{
+    margin : 1rem 0rem;
+    color: var(--darkb);
+    font-weight: 500;
+    font-size: 2rem;
+
+}
+
+table{padding: 1rem;
+    color: white;
+    background-color: var(--lightblue);
+    margin: 2rem 0rem;
+    width: 60%;
+    font-family: var(--para2);
+}
+
+table tr th{
+    
+    font-size: 2rem;
+    padding: 5px;
+}
+
+table tr td{
+    font-size: 1.5rem;
+    padding: 5px;
+}
+
+.details{
+    font-family: var(--para2);
+    font-size: 1.5rem;
+}
+
+#Customer-Details{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.C-Form-Item{
+
+    display: flex;
+
+}
+
+.C-Form-Item p{
+    width: 50%;
+    align-self: center;
+}
+
+.C-Form-Item input{
+    font-family: var(--para2);
+    font-size: 1.5rem;
+    padding: 5px;
+}
+
+.Cinfo{
+    width: 100%;
+    margin: 1rem;
+}
+
+.Csubmit{
+    align-self: center;
+    margin: 2rem;
+    width: 100%;
+}

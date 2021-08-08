@@ -1,0 +1,51 @@
+/* VARIABLES */
+:root{
+    --darkb : #22272c ;
+    --dblue2 : #2a4158 ;
+    --lightblue : #597387 ;
+    --lightblue2 : #8c9ea3 ;
+    --golden : #958a56 ;
+    --bgcolor : #f3f7fb ;
+    --green : #1f5d2f ;
+    --heading: 'Great Vibes', cursive; 
+    --para1: 'Montserrat', sans-serif;
+    --para2 : 'Poppins', sans-serif; 
+}
+
+
+/* CSS  */
+
+#OrderPlaced{
+    padding-top: 100px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h2{
+    margin: 0.5rem;
+    font-weight: 500;
+    font-size: 1.5rem;
+}
+
+#OrderPlaced-Text{
+    padding: 2rem;
+}
+
+#OrderPlaced-btn{
+    margin: 1rem;
+    padding: 1rem;
+}
+#OrderPlaced-btn button{
+    margin: 1rem 2rem;
+}
+
+#OrderPlaced-btn h2{
+    margin: 2rem 0rem;
+}
+
+.impoo{
+    font-size: 2rem;
+}

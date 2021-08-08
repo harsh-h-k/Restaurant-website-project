@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>Harsh's Restro : Your Orders</title>
+    <%- include('partials/HeaderLinks')%>
+        <link rel="stylesheet" href="css/Displaystyle.css">
+</head>
+
+<body>
+    <%- include('partials/Header')%>
+
+        <section id="CorderInfo">
+            <div id="Corder-text">
+                <h2 class="info">Your Order has been saved.
+                    <br>
+                    Kindly review your order below and Proceed to checkout
+                </h2>
+            </div>
+            <table>
+                <tr>
+                    <th>Order_ID</th>
+                    <th>Order</th>
+                    <th>OrderPrice</th>
+                    <th>OrderQty</th>
+
+                </tr>
+
+                <% row.forEach(function(records){ %>
+                    <tr>
+                        <td>
+                            <%=records.Order_ID%>
+                        </td>
+                        <td>
+                            <%=records.Order%>
+                        </td>
+                        <td>
+                            <%=records.OrderPrice%>
+                        </td>
+                        <td>
+                            <%=records.OrderQty%>
+                        </td>
+
+                    </tr>
+                    <% })%>
+                  
+
+            </table>
+            <div id="CorderSubmit">
+                <h2 class="info">
+                    Missed Anything??
+                    <br>
+                </h2>
+                <button class="menu-btn-dark">Order-again</button>
+            </div>
+            <h2 class="info">If Not, <br>
+                Give your contact details below to checkout
+            </h2>
+        </section>
+
+        <section id="Customer-Details">
+            <form action="http://localhost:3000/Checkout" method="post">
+
+                <div class="C-Form-Item">
+                    <input type="hidden" name="Cid">
+                    <p class="details">Name : </p><input type="text" name="Cname" class="Cinfo">
+                </div>
+
+
+                <div class="C-Form-Item">
+                    <p class="details">Address : </p><input style="height: 100px;" type="text" name="CAdd" class="Cinfo">
+                </div>
+
+
+                <div class="C-Form-Item">
+                    <p class="details">Contact No. : </p><input type="text" name="CNumber" class="Cinfo">
+                </div>
+
+
+                <div class="C-Form-Item">
+                    <p class="details">Email : </p><input type="email" name="CEmail" class="Cinfo">
+                </div>
+
+
+                <div class="C-Form-Item">
+                    <input type="submit" value="Proceed To Checkout" class="menu-btn-dark Csubmit">
+                </div>
+            </form>
+
+
+        </section>
+<!-- FOOTER SECTION  -->
+
+
+<%- include('partials/Footer') %>
+
+<!-- JAVASCRIPT -->
+    
+<script>
+    const toggleButton = document.getElementsByClassName('navbar-navtoggle')[0];
+const navbarLinks = document.getElementsByClassName('navbar-menu-item');
+
+toggleButton.addEventListener("click", () => {
+for (let i = 0; i < navbarLinks.length; i++) {
+    navbarLinks[i].classList.toggle('active')
+}
+})
+</script>
+
+</body>
+
+</html>
