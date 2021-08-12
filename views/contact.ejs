@@ -2,25 +2,54 @@
 <html lang="en">
 
 <head>
-    <title>Harsh's Restro : About Us</title>
+    <title>Harsh's Restro : Contact Us</title>
     <%- include('partials/HeaderLinks') %>
+</head>
 
 <body>
     <%- include('partials/Header') %>
-    
-    <%- include('partials/Footer') %>
 
-{{!-- JAVA SCRIPT  --}}
-    <script>
-        const toggleButton = document.getElementsByClassName('navbar-navtoggle')[0];
-        const navbarLinks = document.getElementsByClassName('navbar-menu-item');
+        <section id="contact-container">
+            <h2 class="contact-head"> We're Happy to Hear from you </h2>
+            <div id="contact-box">
+                <div id="contact-img" style="width: 50%;">
+                    <img src="images/contact.png" alt="contact" style="width: 100%;">
+                </div>
+                <div id="contact-text" style="width: 50%;">
+                    <div>
+                        <h2 class="contact-head">
+                            Feel free to contact us at :- </h2>
+                    </div>
+                    <div class="contact-details-link">
+                      <p>
+                          Contact no: 9876543210
+                          <br>
+                          email : xyz@abc.com
+                          <br>
+                          address : 31/13 Sardar Patel Marg,
+                          Civil lines , Prayagraj.
+                      </p>
 
-        toggleButton.addEventListener("click", () => {
-            for (let i = 0; i < navbarLinks.length; i++) {
-                navbarLinks[i].classList.toggle('active')
-            }
-        })
-    </script>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <%- include('partials/Footer') %>
+
+
+            <script>
+                const toggleButton = document.getElementsByClassName('navbar-navtoggle')[0];
+                const navbarLinks = document.getElementsByClassName('navbar-menu-item');
+
+                toggleButton.addEventListener("click", () => {
+                    for (let i = 0; i < navbarLinks.length; i++) {
+                        navbarLinks[i].classList.toggle('active')
+                    }
+                })
+
+            </script>
 </body>
 
 </html>

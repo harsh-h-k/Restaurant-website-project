@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&display=swap');
+
+/* 
+font-family: 'Great Vibes', cursive;
+font-family: 'Poppins', sans-serif;
+font-family: 'Montserrat', sans-serif; */
+
+/* VARIABLES */
+:root{
+    --darkb : #22272c ;
+    --dblue2 : #2a4158 ;
+    --lightblue : #597387 ;
+    --lightblue2 : #8c9ea3 ;
+    --golden : #958a56 ;
+    --bgcolor : #f3f7fb ;
+    --green : #1f5d2f ;
+    --heading: 'Great Vibes', cursive; 
+    --para1: 'Montserrat', sans-serif;
+    --para2 : 'Poppins', sans-serif; 
+}
+
+/* CONTACT CONTAINER  */
+#contact-container{
+    padding-top: 100px;
+}
+
+#contact-box{
+    padding: 2rem;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+.contact-head{
+    margin: 5px 0px;
+    text-align: center;
+    font-size: 2rem;
+    
+}
+
+#contact-img  {
+    align-self: center;
+}
+
+
+.contact-details-link > p{
+    font-family: var(--para2);
+    font-size: 1.5rem;
+    margin: 1rem 0rem;
+}

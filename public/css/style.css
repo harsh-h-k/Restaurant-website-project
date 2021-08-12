@@ -22,6 +22,9 @@ font-family: 'Montserrat', sans-serif; */
 
 /* UTILITY CLASSES */
 
+
+
+
 a{
     text-decoration: none;
 }
@@ -162,7 +165,7 @@ color: var(--lightblue2);
 .menu-btn:hover{
 border: 1px solid var(--lightblue);
     background-color: var(--dblue2);
-    color: white;
+    color: white !important ;
 }
 
 .navbar-navtoggle{
