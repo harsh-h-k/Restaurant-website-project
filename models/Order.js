@@ -11,6 +11,7 @@ mongoose.connect("mongodb://localhost:27017/RestaurantDataBase", {
     console.log(err)
 })
 
+
 const OrderSchema = new mongoose.Schema({
     Order: String,
     OrderPrice: Number,

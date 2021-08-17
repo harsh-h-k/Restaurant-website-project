@@ -1,0 +1,56 @@
+/* VARIABLES */
+:root{
+    --darkb : #22272c ;
+    --dblue2 : #2a4158 ;
+    --lightblue : #597387 ;
+    --lightblue2 : #8c9ea3 ;
+    --golden : #958a56 ;
+    --bgcolor : #f3f7fb ;
+    --green : #1f5d2f ;
+    --heading: 'Great Vibes', cursive; 
+    --para1: 'Montserrat', sans-serif;
+    --para2 : 'Poppins', sans-serif; 
+}
+
+#about-container{
+    padding-top: 100px;
+}
+
+#about-container h1{
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 400;
+    letter-spacing: 1px;
+} 
+
+#about-box{
+    padding: 2rem;
+    display: flex;
+    width: 90%;
+}
+
+
+
+#about-img , #about-text{
+    width: 50%;
+}
+
+#about-img img{
+    width: 100%;
+    object-fit: contain;
+    border-radius: 25px;
+}
+
+.about-material{
+    padding: 2rem 3rem;
+    font-family: var(--para2);
+    font-size: 2rem;
+    text-align: center;
+}
+
+.about-btn-div{
+    display: flex;
+    align-self: center;
+    align-content: center;
+    justify-content: center;
+}
